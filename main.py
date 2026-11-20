@@ -6,12 +6,12 @@ import sys
 import threading
 import time
 
-from .config import load_config
-from .exchange import make_exchange
-from .scanner import Scanner
-from .state import State
-from .telegram import Notifier
-from .trader import Trader, px
+from config import load_config
+from exchange import make_exchange
+from scanner import Scanner
+from state import State
+from telegram import Notifier
+from trader import Trader, px
 
 logging.basicConfig(level=logging.INFO, stream=sys.stdout,
                     format="%(asctime)s | %(levelname)s | %(name)s | %(message)s")

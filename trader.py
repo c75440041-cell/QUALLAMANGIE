@@ -14,7 +14,7 @@ import logging
 import threading
 import time
 
-from .indicators import ema, to_df
+from indicators import ema, to_df
 
 log = logging.getLogger("trader")
 

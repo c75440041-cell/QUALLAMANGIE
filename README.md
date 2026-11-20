@@ -45,7 +45,7 @@ git push -u origin main
 2. En **Variables** añade las del archivo `.env.example` (mínimo: `TRADING_MODE`, `TELEGRAM_BOT_TOKEN`, `TELEGRAM_CHAT_ID`).
 3. **Settings → Region**: elige una región de **Europa o Asia**. BingX bloquea algunas IP de EE. UU.
 4. **Volume** (recomendado): añade un volumen montado en `/data` y pon `DATA_DIR=/data` para conservar el estado entre reinicios.
-5. El comando de inicio ya está en `railway.json`/`Procfile`: `python -m bot.main`.
+5. El comando de inicio ya está en `railway.json`/`Procfile`: `python main.py`.
 6. Deberías recibir en Telegram el mensaje «bot iniciado».
 
 ### Ejecución local
@@ -54,7 +54,7 @@ python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
 cp .env.example .env   # edítalo
 set -a && source .env && set +a
-python -m bot.main
+python main.py
 pytest                 # tests de estrategia y gestión
 ```
 

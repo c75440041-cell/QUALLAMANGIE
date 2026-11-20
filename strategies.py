@@ -14,7 +14,7 @@ from __future__ import annotations
 
 from dataclasses import dataclass, field
 
-from .indicators import adr_pct, atr, ema, rvol, session_vwap
+from indicators import adr_pct, atr, ema, rvol, session_vwap
 
 
 @dataclass

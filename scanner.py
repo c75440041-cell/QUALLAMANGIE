@@ -4,8 +4,8 @@ from __future__ import annotations
 import logging
 import re
 
-from .indicators import rvol, to_df
-from .strategies import adjust_score, btc_regime, evaluate
+from indicators import rvol, to_df
+from strategies import adjust_score, btc_regime, evaluate
 
 BTC = "BTC/USDT:USDT"
 log = logging.getLogger("scanner")
